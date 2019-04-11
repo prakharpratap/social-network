@@ -1,0 +1,17 @@
+{
+  "name": "social_network",
+  "version": "1.0.0",
+  "description": "a small social network",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "prakhar",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.5.1",
+    "nodemon": "^1.18.11"
+  }
+}
