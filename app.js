@@ -4,7 +4,7 @@ const http=require('http');
 const bodyParser=require('body-parser');
 const port=3000;
 const app=express();
- app.use(express.static(__dirname + '/website_front_end'));
+ app.use(express.static(__dirname + '/public'));
 const url ='mongodb://localhost:27017/galon';
 app.use(bodyParser.json());
 const connect =mongoose.connect(url);
@@ -13,10 +13,10 @@ connect.then(function(){
 });
 
 app.use('/login',function(req,res,next){
-    res.sendFile(__dirname+'/website_front_end/index.html');
+    res.sendFile(__dirname+'/index.html');
 });
 app.use('/signup',function(req,res,next){
-    res.sendFile(__dirname+'/website_front_end/signup.html');
+    res.sendFile(__dirname+'/signup.html');
 });
 
 
